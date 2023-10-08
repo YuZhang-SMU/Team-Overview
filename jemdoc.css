@@ -14,16 +14,19 @@ body {
 }
 
 #layout-menu {
+	position: fixed;
+	left: 0;
+	width: 140px;
+	height: 100%;
 	background: #f6f6f6;
 	border: 1px solid #dddddd;
-	padding-top: 0.5em;
+	padding-top: 1px;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.0em;
-	width: auto;
 	white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
+	text-align: left;
+	vertical-align: top;
 }
 
 #layout-menu td {
@@ -32,8 +35,7 @@ body {
 }
 
 #layout-content {
-	padding-top: 0.0em;
-	padding-left: 1.0em;
+	padding-left: 180px;
 	padding-right: 1.0em;
     border: none;
     background: white;
@@ -77,26 +79,35 @@ a:hover {
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
+	padding-left: 13px;
+	border-bottom: 2px solid gray;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
-	padding-bottom: 0.1em;
+	padding-bottom: 0.2em;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 div.menu-item {
+	margin-top: 0.5em;
 	padding-left: 16px;
 	text-indent: -16px;
+	font-size: 18px;
 }
 
-div#toptitle {
+.toptitle {
 	padding-bottom: 0.2em;
+	padding-top: 1.5em;
 	margin-bottom: 1.5em;
 	border-bottom: 3px double gray;
 }
 
 /* Reduce space if we begin the page with a title. */
-div#toptitle + h2, div#toptitle + h3 {
+div.toptitle + h2, div.toptitle + h3 {
+	margin-top: -0.7em;
+}
+
+div.toptitle + h2, div.toptitle + h3 {
 	margin-top: -0.7em;
 }
 
@@ -304,7 +315,7 @@ span.comment, span.comment > *, span.string, span.string > * {
 	margin: 2px;
 }
 
-#fwtitle #toptitle {
+#fwtitle .toptitle {
 	padding-left: 0.5em;
 	margin-bottom: 0.5em;
 }
@@ -313,7 +324,7 @@ span.comment, span.comment > *, span.string, span.string > * {
 	margin-top: -0.7em;
 }
 
-div#toptitle h1, #layout-content div#toptitle h1 {
+div.toptitle h1, #layout-content div.toptitle h1 {
 	margin-bottom: 0.0em;
 	padding-bottom: 0.1em;
 	padding-top: 0;
